@@ -8,3 +8,9 @@ chatbot's user interface was created using the Flask web framework.
 The data required to train the bot was scraped from the official Pytorch 
 documentation website using the scrapy framework, which is a popular 
 open source framework for web scraping/crawling.
+
+Note:
+Please go through the Documentation PDF to get more insights about the project
+
+Check out the working of my project at :
+https://drive.google.com/file/d/1VbhX93Fk7rXmI0TmCPrlJny9sBGc5u1l/view?usp=sharing
