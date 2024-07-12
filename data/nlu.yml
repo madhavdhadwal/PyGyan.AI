@@ -1,0 +1,557 @@
+
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey there
+    - Greetings
+    - What's up?
+    - How are you
+    - How are you ?
+    - How you feel ?
+    - How is your state ?
+    - How's it going?
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Take care
+
+- intent: chatbot_challenge
+  examples: |
+    - Are you a bot?
+    - Are you real?
+    - Are you a human?
+    - What are you?
+    - Who created you?
+    - Who made you
+    - Who built you
+    - What's your name?
+    - Who are you?
+    - Can you tell me your name?
+
+- intent: information_on_pytorch
+  examples: |
+    - What is Pytorch ?
+    - Can you tell me the definition of Pytorch ?
+    - How can you describe Pytorch ?
+    - Define Pytorch
+    - Explain Pytorch
+    - Who made Pytorch ?
+    - Founder of Pytorch
+    - Pytorch founded by ?
+    - Pytorch made by whom ?
+    - Who developed pytorch ?
+    - Tell me about pytorch
+    - Tell me what is pytorch
+    - Pytorch is developed by whom ?
+
+- intent: features_of_pytorch
+  examples: |
+    - What are the features of Pytorch ?
+    - Describe Pytorch in detail
+    - Key features of Pytorch
+    - What are its features ?
+    - Pytorch features
+    - Tell its features
+
+
+- intent: implementing_features_or_fixing_bugs
+  examples: |
+    - How do I implement new features in PyTorch?
+    - Can you guide me on fixing bugs in PyTorch?
+    - What is the process for implementing new features or fixing bugs?
+    - I want to fix a bug in PyTorch. How do I do that?
+    - How can I contribute by fixing bugs or adding features?
+    - How do I propose new features for PyTorch?
+    - Tell me about proposing new features in PyTorch.
+    - How can I suggest new features in PyTorch?
+
+- intent: adding_tutorials
+  examples: |
+    - How do I add new tutorials to PyTorch?
+    - Can you guide me on contributing tutorials?
+    - What is the process for adding a tutorial to PyTorch?
+    - I want to contribute a tutorial. How do I do that?
+    - How can I add my own tutorial to the PyTorch documentation?
+
+- intent: submitting_pull_requests_to_fix_open_issues
+  examples: |
+    - How do I submit a pull request to fix an open issue?
+    - Can you guide me on submitting pull requests for open issues?
+    - What is the process for submitting pull requests to fix issues in PyTorch?
+    - I found an open issue. How do I submit a pull request to fix it?
+    - How do I report issues in PyTorch?
+    - Tell me about reporting issues in PyTorch.
+    - What is the process for reporting issues in PyTorch?
+    - How can I contribute by submitting pull requests for open issues?
+
+- intent: torchscript
+  examples: |
+    - What is TorchScript in PyTorch?
+    - Can you explain TorchScript?
+    - How do I use TorchScript in my PyTorch projects?
+    - What are the benefits of using TorchScript?
+    - How can I convert my PyTorch models to TorchScript?
+
+- intent: improving_code_readability
+  examples: |
+    - How can I improve the readability of my code in PyTorch?
+    - Can you give me tips on making my PyTorch code more readable?
+    - What are the best practices for improving code readability in PyTorch?
+    - How do I write clean and readable code in PyTorch?
+    - Can you guide me on improving the readability of my PyTorch scripts?
+
+- intent: contribution_process
+  examples: |
+    - What is the process for contributing to PyTorch?
+    - How can I start contributing to PyTorch?
+    - Can you explain the contribution process for PyTorch?
+    - What steps should I follow to contribute to PyTorch?
+    - How do I get started with contributing to PyTorch?
+    - What is the PyTorch Contribution Guide?
+    - Tell me about the contribution guide for PyTorch.
+    - How can I contribute to PyTorch?
+    - What are the guidelines for contributing to PyTorch?
+
+- intent: participating_in_online_discussions
+  examples: |
+    - How can I participate in PyTorch discussions?
+    - Where can I join discussions about PyTorch development?
+    - Can you guide me on participating in PyTorch forums?
+    - How do I join the PyTorch community discussions?
+    - Where can I discuss PyTorch issues and features?
+
+- intent: reviewing_open_pull_requests
+  examples: |
+    - How do I review open pull requests in PyTorch?
+    - Can you guide me on reviewing pull requests for PyTorch?
+    - What is the process for reviewing pull requests in PyTorch?
+    - How can I help with reviewing pull requests in PyTorch?
+    - What should I consider when reviewing PyTorch pull requests?
+
+- intent: improving_documentation_and_tutorials
+  examples: |
+    - How can I improve the PyTorch documentation?
+    - Can you guide me on improving PyTorch tutorials?
+    - What is the process for updating PyTorch documentation?
+    - How do I contribute to PyTorch documentation improvements?
+    - How can I fix issues in PyTorch tutorials?
+
+- intent: adding_test_cases_to_make_codebase_more_robust
+  examples: |
+    - How do I add test cases to PyTorch?
+    - Can you guide me on making the PyTorch codebase more robust?
+    - What is the process for adding test cases in PyTorch?
+    - How can I contribute to PyTorch by adding test cases?
+    - What are the best practices for writing test cases for PyTorch?
+
+- intent: torch_monitor
+  examples: |
+    - What is torch.monitor in PyTorch?
+    - Can you explain the torch.monitor module?
+    - How do I use torch.monitor for logging events?
+    - What are the features of torch.monitor in PyTorch?
+    - How can I track system performance with torch.monitor?
+
+- intent: torch_fx
+  examples: |
+    - What is torch.fx in PyTorch?
+    - Can you explain the torch.fx toolkit?
+    - How do I use torch.fx for transforming models?
+    - What are the components of torch.fx?
+    - How can I apply transformations using torch.fx?
+
+- intent: named_tensors
+  examples: |
+    - What are named tensors in PyTorch?
+    - Can you explain the concept of named tensors?
+    - How do I use named tensors in PyTorch?
+    - What are the benefits of using named tensors?
+    - How can named tensors improve code readability?
+    - Explain the concept of named tensors in PyTorch.
+
+- intent: promoting_pytorch
+  examples: |
+    - How can I promote PyTorch?
+    - What is the process for promoting PyTorch?
+    - Explain how to promote PyTorch.
+
+- intent: triaging_issues
+  examples: |
+    - How can I triage issues in PyTorch?
+    - What is the process for triaging issues in PyTorch?
+    - Tell me how to triage issues in PyTorch.
+    - What are triage issues ?
+    - What is triaging ?
+    - Triaging issues
+    - Triage issues
+
+- intent: open_source_dev
+  examples: |
+    - What should I know about open source development for PyTorch?
+    - Tell me about open source development in PyTorch.
+    - Explain the open source development process for PyTorch.
+
+- intent: add_new_maintainer
+  examples: |
+    - How can I add a new maintainer in PyTorch?
+    - What is the process to add a new maintainer?
+    - Tell me how to add a new maintainer to PyTorch.
+
+
+- intent: torch_signal
+  examples: |
+      - What is the torch.signal module?
+      - How do I use torch.signal?
+      - Explain the functions in torch.signal.
+
+- intent: torch_overrides
+  examples: |
+      - What are torch.overrides?
+      - How do I use torch.overrides in PyTorch?
+      - Explain the torch.overrides module.
+
+- intent: torch_special
+  examples: |
+      - What is torch.special?
+      - How do I use the torch.special module?
+      - Explain the functions in torch.special.
+
+- intent: torch_linalg
+  examples: |
+      - What is torch.linalg?
+      - How do I use torch.linalg?
+      - Explain the features of torch.linalg.
+
+- intent: torch_hub
+  examples: |
+      - What is torch.hub?
+      - How do I use torch.hub?
+      - Explain the functions of torch.hub.
+
+- intent: torch_futures
+  examples: |
+      - What is torch.futures?
+      - How do I use torch.futures?
+      - Explain the torch.futures module.
+      - how is torch.futures used in Pytorch?
+      - Torch.futures usage
+      - How does torch.futures work in pytorch ?
+
+- intent: torch_func
+  examples: |
+      - What is torch.func?
+      - How do I use torch.func in PyTorch?
+      - Explain the purpose of torch.func.
+      - how is torch.func used in Pytorch?
+      - Torch.func usage
+      - How does torch.func work in pytorch ?
+
+- intent: torch_fft
+  examples: |
+      - What is torch.fft?
+      - How do I use torch.fft?
+      - Explain the functions in torch.fft.
+
+
+- intent: torch_compiler
+  examples: |
+      - What is torch.compiler?
+      - How do I use torch.compiler in PyTorch?
+      - Explain the purpose of torch.compiler.
+
+- intent: torch_env_vars
+  examples: |
+      - What are the Torch Environment Variables?
+      - How do I use Torch Environment Variables?
+      - Explain the Torch Environment Variables in PyTorch.
+
+- intent: torch_logging
+  examples: |
+      - What is torch._logging?
+      - How do I configure logging in PyTorch?
+      - Explain the torch._logging module.
+
+- intent: torch_tensorboard
+  examples: |
+      - How do I use TensorBoard with PyTorch?
+      - Explain the features of torch.utils.tensorboard.
+      - How can I log data for TensorBoard in PyTorch?   
+
+- intent: torch_xla
+  examples: |
+      - How do I run PyTorch on XLA devices?
+      - Explain PyTorch on XLA devices.
+      - What is the torch_xla package?
+
+- intent: torch_distributions
+  examples: |
+      - What are probability distributions in PyTorch?
+      - How do I use torch.distributions?
+      - Explain the distributions package in PyTorch.
+
+- intent: torch_model_zoo
+  examples: |
+      - What is torch.utils.model_zoo?
+      - How do I use torch.utils.model_zoo?
+      - Explain the model zoo in PyTorch.
+
+- intent: torch_fx_symbolic_shapes
+  examples: |
+      - What is torch.fx.experimental.symbolic_shapes?
+      - How do I use symbolic shapes in PyTorch?
+      - Explain symbolic shapes in torch.fx.experimental.
+
+- intent: torch_fx_interpreter
+  examples: |
+      - How do I use the interpreter pattern in torch.fx?
+      - What is the interpreter pattern in torch.fx?
+      - Tell about torch.fx
+      - Describe torch.fx
+      - Details about torch.fx
+      - Explain the interpreter pattern in PyTorch.
+
+- intent: torch_fx_graph_manipulation
+  examples: |
+      - How do I manipulate graphs in torch.fx?
+      - What are the methods for graph manipulation in torch.fx?
+      - Explain graph manipulation in PyTorch.
+
+- intent: torch_fx_debugging
+  examples: |
+      - How do I debug transformations in torch.fx?
+      - Explain debugging in torch.fx.
+      - What are the methods for debugging torch.fx?
+      - How do I write transformations in torch.fx?
+      - Explain writing transformations in torch.fx.
+      - What are the methods for writing transformations in PyTorch?
+
+- intent: torch_fx_limitations
+  examples: |
+      - What are the limitations of symbolic tracing in torch.fx?
+      - Explain the limitations of symbolic tracing in PyTorch.
+      - What should I know about the limitations of torch.fx?
+
+- intent: torch_config
+  examples: |
+      - What is torch.__config__?
+      - How do I use torch.__config__ in PyTorch?
+      - Explain the configuration module in PyTorch.
+
+- intent: torch_type_info
+  examples: |
+      - How do I access type information in PyTorch?
+      - Explain torch.finfo and torch.iinfo.
+      - What are the methods for accessing type information in PyTorch?
+
+- intent: torch_io
+  examples: |
+      - How do I handle I/O operations in PyTorch?
+      - Explain torch.io in PyTorch.
+      - What are the methods for I/O operations in PyTorch?
+
+- intent: torch_profiler
+  examples: |
+      - How do I use torch.profiler?
+      - What is torch.profiler in PyTorch?
+      - Explain the features of torch.profiler.
+
+- intent: torch_autograd
+  examples: |
+      - How does autograd work in PyTorch?
+      - Explain autograd in PyTorch.
+      - How do I use autograd in PyTorch?
+
+- intent: torch_data
+  examples: |
+      - How do I use the torch.utils.data module?
+      - Explain torch.utils.data in PyTorch.
+      - What is torch.utils.data?
+
+- intent: torch_multiprocessing
+  examples: |
+      - How do I use torch.multiprocessing?
+      - Explain torch.multiprocessing in PyTorch.
+      - What is torch.multiprocessing?
+
+- intent: torch_jit
+  examples: |
+      - What is torch.jit in PyTorch?
+      - How do I use torch.jit?
+      - Explain the features of torch.jit.
+
+- intent: torch_optim
+  examples: |
+      - How do I use torch.optim?
+      - What is torch.optim in PyTorch?
+      - Explain the functions in torch.optim.
+
+- intent: torch_nn
+  examples: |
+      - How do I use torch.nn?
+      - Describe torch.nn
+      - Function of torch.nn
+      - Usage of torch.nn in pytorch
+      - What is torch.nn in PyTorch?
+      - Explain the modules in torch.nn.
+
+- intent: torch_quantization
+  examples: |
+      - How do I use torch.quantization?
+      - What is torch.quantization in PyTorch?
+      - Explain the features of torch.quantization.
+
+- intent: torch_rpc
+  examples: |
+      - How do I use torch.distributed.rpc?
+      - What is torch.distributed.rpc in PyTorch?
+      - Explain the functions in torch.distributed.rpc.
+
+- intent: torch_testing
+  examples: |
+      - How do I use torch.testing?
+      - What is torch.testing in PyTorch?
+      - Explain the features of torch.testing.
+
+- intent: torch_vision
+  examples: |
+      - How do I use torchvision?
+      - What is torchvision in PyTorch?
+      - Explain the modules in torchvision.
+
+- intent: torch_audio
+  examples: |
+      - How do I use torchaudio?
+      - What is torchaudio in PyTorch?
+      - Explain the features of torchaudio.
+
+- intent: torch_text
+  examples: |
+      - How do I use torchtext?
+      - What is torchtext in PyTorch?
+      - Explain the modules in torchtext.
+
+- intent: torch_sparse
+  examples: |
+      - How do I use torch.sparse?
+      - What is torch.sparse in PyTorch?
+      - Explain the functions in torch.sparse.
+
+- intent: ask_installation
+  examples: |
+      - How do I install PyTorch?
+      - Can you guide me on installing PyTorch?
+      - What are the steps to install PyTorch?
+
+- intent: ask_examples
+  examples: |
+      - Can you show me some PyTorch examples?
+      - Provide some examples of PyTorch usage.
+      - Show me examples using PyTorch.
+
+- intent: ask_learning_resources
+  examples: |
+      - Where can I learn PyTorch?
+      - Provide some learning resources for PyTorch.
+      - What are the best resources to learn PyTorch?
+
+- intent: ask_community
+  examples: |
+      - How can I join the PyTorch community?
+      - Are there any PyTorch community forums?
+      - Where can I discuss PyTorch with others?
+
+- intent: ask_versions
+  examples: |
+      - What are the different versions of PyTorch?
+      - How can I check the PyTorch version?
+      - Provide information about PyTorch versions.
+
+- intent: ask_models
+  examples: |
+      - What are the pre-trained models available in PyTorch?
+      - Can you list some pre-trained models in PyTorch?
+      - Show me the pre-trained models in PyTorch.
+
+- intent: ask_performance_tips
+  examples: |
+      - How can I improve PyTorch performance?
+      - Provide some tips to optimize PyTorch code.
+      - How to make PyTorch code run faster?
+
+- intent: ask_custom_datasets
+  examples: |
+      - How do I create a custom dataset in PyTorch?
+      - Guide me to create a custom dataset using PyTorch.
+      - What are the steps to create a custom dataset in PyTorch?
+
+- intent: ask_favorite_feature
+  examples: |
+      - What's your favorite feature in PyTorch?
+      - Which PyTorch feature do you like the most?
+      - Tell me your favorite thing about PyTorch.
+
+- intent: ask_about_day
+  examples: |
+      - How is your day going?
+      - How was your day ?
+      - What your day has been like ?
+      - Describe me what you do all day ?
+      - How's your day been?
+
+- intent: ask_hobbies
+  examples: |
+      - What are your hobbies?
+      - What do you do for fun?
+      - What are your fun activities ?
+      - Tell me how you make fun
+      - Describe your fun activities
+      - Do you have any hobbies?
+
+- intent: ask_for_joke
+  examples: |
+      - Tell me a joke.
+      - Can you make me laugh?
+      - Do you know any jokes?
+      - I am sad
+      - I am feeling sad
+      - I often feel sad
+      - I am so sad
+
+- intent: ask_favorite_library
+  examples: |
+      - What's your favorite Python library?
+      - Which Python library do you like the most?
+      - Tell me your favorite Python library.
+
+- intent: ask_about_py
+  examples: |
+      - What do you like about Python?
+      - Why do you like Python?
+      - What's great about Python?
+
+- intent: chatbot_intelligence
+  examples: |
+    - How are you so intelligent ?
+    - How are you so smart ?
+    - You are good bot
+    - How are you so perfect ?
+    - How can you be so good ?
+    - You are sweet
+    - How are you so nice
+    - You are nice
+
+- intent: ask_torch_deploy
+  examples: |
+      - What is torch.deploy in PyTorch?
+      - Can you explain the torch.deploy module?
+      - How do I deploy a PyTorch model?
+
+
+    
+

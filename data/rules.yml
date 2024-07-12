@@ -1,0 +1,398 @@
+
+version: "3.1"
+rules:
+- rule: Respond to greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Respond to chatbot challenge
+  steps:
+  - intent: chatbot_challenge
+  - action: utter_chatbot_challenge
+
+- rule: Provide information about Pytorch
+  steps:
+    - intent: information_on_pytorch
+    - action: utter_information_on_pytorch
+
+- rule: Describe the key features of Pytorch
+  steps:
+    - intent: features_of_pytorch
+    - action: utter_features_of_pytorch
+
+
+- rule: Provide information about implementing features or fixing bugs
+  steps:
+  - intent: implementing_features_or_fixing_bugs
+  - action: utter_implementing_features_or_fixing_bugs
+
+- rule: Provide information about adding tutorials
+  steps:
+  - intent: adding_tutorials
+  - action: utter_adding_tutorials
+
+- rule: Provide information about submitting pull requests to fix open issues
+  steps:
+  - intent: submitting_pull_requests_to_fix_open_issues
+  - action: utter_submitting_pull_requests_to_fix_open_issues
+
+- rule: Provide information about TorchScript
+  steps:
+  - intent: torchscript
+  - action: utter_torchscript
+
+- rule: Provide information about improving code readability
+  steps:
+  - intent: improving_code_readability
+  - action: utter_improving_code_readability
+
+- rule: Provide information about the contribution process
+  steps:
+  - intent: contribution_process
+  - action: utter_contribution_process
+
+- rule: Provide information about participating in online discussions
+  steps:
+  - intent: participating_in_online_discussions
+  - action: utter_participating_in_online_discussions
+
+- rule: Provide information about reviewing open pull requests
+  steps:
+  - intent: reviewing_open_pull_requests
+  - action: utter_reviewing_open_pull_requests
+
+- rule: Provide information about improving documentation and tutorials
+  steps:
+  - intent: improving_documentation_and_tutorials
+  - action: utter_improving_documentation_and_tutorials
+
+- rule: Provide information about adding test cases to make the codebase more robust
+  steps:
+  - intent: adding_test_cases_to_make_codebase_more_robust
+  - action: utter_adding_test_cases_to_make_codebase_more_robust
+
+- rule: Provide information about torch.monitor
+  steps:
+  - intent: torch_monitor
+  - action: utter_torch_monitor
+
+- rule: Provide information about torch.fx
+  steps:
+  - intent: torch_fx
+  - action: utter_torch_fx
+
+- rule: Provide information about named tensors
+  steps:
+  - intent: named_tensors
+  - action: utter_named_tensors
+
+- rule: Ask about promoting PyTorch
+  steps:
+  - intent: promoting_pytorch
+  - action: utter_promoting_pytorch
+
+- rule: Ask about triaging issues
+  steps:
+  - intent: triaging_issues
+  - action: utter_triaging_issues
+
+- rule: Ask about open source development
+  steps:
+  - intent: open_source_dev
+  - action: utter_open_source_dev
+
+- rule: Ask about adding a new maintainer
+  steps:
+  - intent: add_new_maintainer
+  - action: utter_add_new_maintainer
+
+- rule: Ask about torch.signal
+  steps:
+  - intent: torch_signal
+  - action: utter_torch_signal
+
+- rule: Ask about torch.overrides
+  steps:
+  - intent: torch_overrides
+  - action: utter_torch_overrides
+
+- rule: Ask about torch.special
+  steps:
+  - intent: torch_special
+  - action: utter_torch_special
+
+- rule: Ask about torch.linalg
+  steps:
+  - intent: torch_linalg
+  - action: utter_torch_linalg
+
+- rule: Ask about torch.hub
+  steps:
+  - intent: torch_hub
+  - action: utter_torch_hub
+
+- rule: Ask about torch.futures
+  steps:
+  - intent: torch_futures
+  - action: utter_torch_futures
+
+- rule: Ask about torch.func
+  steps:
+  - intent: torch_func
+  - action: utter_torch_func
+
+- rule: Ask about torch.fft
+  steps:
+  - intent: torch_fft
+  - action: utter_torch_fft
+
+- rule: Ask about torch.compiler
+  steps:
+  - intent: torch_compiler
+  - action: utter_torch_compiler
+
+- rule: Ask about Torch Environment Variables
+  steps:
+  - intent: torch_env_vars
+  - action: utter_torch_env_vars
+
+- rule: Ask about torch._logging
+  steps:
+  - intent: torch_logging
+  - action: utter_torch_logging
+
+- rule: Ask about TensorBoard
+  steps:
+  - intent: torch_tensorboard
+  - action: utter_torch_tensorboard
+
+- rule: Ask about XLA devices
+  steps:
+  - intent: torch_xla
+  - action: utter_torch_xla
+
+- rule: Ask about probability distributions
+  steps:
+  - intent: torch_distributions
+  - action: utter_torch_distributions
+
+- rule: Ask about model zoo
+  steps:
+  - intent: torch_model_zoo
+  - action: utter_torch_model_zoo
+
+- rule: Ask about symbolic shapes in torch.fx
+  steps:
+  - intent: torch_fx_symbolic_shapes
+  - action: utter_torch_fx_symbolic_shapes
+
+- rule: Ask about the interpreter pattern in torch.fx
+  steps:
+  - intent: torch_fx_interpreter
+  - action: utter_torch_fx_interpreter
+
+- rule: Ask about graph manipulation in torch.fx
+  steps:
+  - intent: torch_fx_graph_manipulation
+  - action: utter_torch_fx_graph_manipulation
+
+- rule: Ask about debugging in torch.fx
+  steps:
+  - intent: torch_fx_debugging
+  - action: utter_torch_fx_debugging
+
+- rule: Ask about limitations of torch.fx
+  steps:
+  - intent: torch_fx_limitations
+  - action: utter_torch_fx_limitations
+
+- rule: Ask about torch.__config__
+  steps:
+  - intent: torch_config
+  - action: utter_torch_config
+
+- rule: Ask about type information in PyTorch
+  steps:
+  - intent: torch_type_info
+  - action: utter_torch_type_info
+
+- rule: Ask about I/O operations in PyTorch
+  steps:
+  - intent: torch_io
+  - action: utter_torch_io
+
+- rule: Ask about torch.profiler
+  steps:
+  - intent: torch_profiler
+  - action: utter_torch_profiler
+
+- rule: Ask about autograd
+  steps:
+  - intent: torch_autograd
+  - action: utter_torch_autograd
+
+- rule: Ask about torch.utils.data
+  steps:
+  - intent: torch_data
+  - action: utter_torch_data
+
+- rule: Ask about torch.multiprocessing
+  steps:
+  - intent: torch_multiprocessing
+  - action: utter_torch_multiprocessing
+
+- rule: Ask about torch.jit
+  steps:
+  - intent: torch_jit
+  - action: utter_torch_jit
+
+- rule: Ask about torch.optim
+  steps:
+  - intent: torch_optim
+  - action: utter_torch_optim
+
+- rule: Ask about torch.nn
+  steps:
+  - intent: torch_nn
+  - action: utter_torch_nn
+
+- rule: Ask about torch.quantization
+  steps:
+  - intent: torch_quantization
+  - action: utter_torch_quantization
+
+- rule: Ask about torch.distributed.rpc
+  steps:
+  - intent: torch_rpc
+  - action: utter_torch_rpc
+
+- rule: Ask about torch.testing
+  steps:
+  - intent: torch_testing
+  - action: utter_torch_testing
+
+- rule: Ask about torchvision
+  steps:
+  - intent: torch_vision
+  - action: utter_torch_vision
+
+- rule: Ask about torchaudio
+  steps:
+  - intent: torch_audio
+  - action: utter_torch_audio
+
+- rule: Ask about torchtext
+  steps:
+  - intent: torch_text
+  - action: utter_torch_text
+
+- rule: Ask about torch.sparse
+  steps:
+  - intent: torch_sparse
+  - action: utter_torch_sparse
+
+- rule: Ask about installation
+  steps:
+  - intent: ask_installation
+  - action: utter_ask_installation
+
+- rule: Ask for examples
+  steps:
+  - intent: ask_examples
+  - action: utter_ask_examples
+
+- rule: Ask about learning resources
+  steps:
+  - intent: ask_learning_resources
+  - action: utter_ask_learning_resources
+
+- rule: Ask about the community
+  steps:
+  - intent: ask_community
+  - action: utter_ask_community
+
+- rule: Ask about versions
+  steps:
+  - intent: ask_versions
+  - action: utter_ask_versions
+
+- rule: Ask about pre-trained models
+  steps:
+  - intent: ask_models
+  - action: utter_ask_models
+
+- rule: Ask about performance tips
+  steps:
+  - intent: ask_performance_tips
+  - action: utter_ask_performance_tips
+
+- rule: Ask about custom datasets
+  steps:
+  - intent: ask_custom_datasets
+  - action: utter_ask_custom_datasets
+
+- rule: Ask about favorite PyTorch feature
+  steps:
+  - intent: ask_favorite_feature
+  - action: utter_ask_favorite_feature
+
+- rule: Ask about the chatbot's day
+  steps:
+  - intent: ask_about_day
+  - action: utter_ask_about_day
+
+- rule: Ask about hobbies
+  steps:
+  - intent: ask_hobbies
+  - action: utter_ask_hobbies
+
+- rule: Ask for a joke
+  steps:
+  - intent: ask_for_joke
+  - action: utter_ask_for_joke
+
+- rule: Ask about favorite Python library
+  steps:
+  - intent: ask_favorite_library
+  - action: utter_ask_favorite_library
+
+- rule: Ask about Python
+  steps:
+  - intent: ask_about_py
+  - action: utter_ask_about_py
+
+- rule: Ask about intelligence
+  steps:
+    - intent: chatbot_intelligence
+    - action: utter_chatbot_intelligence
+
+- rule: Ask about torch_deploy
+  steps:
+    - intent: ask_torch_deploy
+    - action: utter_ask_torch_deploy
+
+- rule: Two stage fallback
+  steps:
+    - intent: nlu_fallback
+    - action: action_two_stage_fallback
+    - active_loop: action_two_stage_fallback
+
+#- rule: Handle unknown user inputs
+#  steps:
+#  - intent: default_fallback
+#  - action: utter_default_fallback
+
+#- rule: Handle fallback
+#  steps:
+#  - intent: default_fallback
+#  - action: utter_default_fallback
+#- rule: Fallback action
+#  steps:
+#  - action: action_default_fallback
+#  - action: utter_default_fallback

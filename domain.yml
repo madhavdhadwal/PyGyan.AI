@@ -1,0 +1,394 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - chatbot_challenge
+  - information_on_pytorch
+  - features_of_pytorch
+  - implementing_features_or_fixing_bugs
+  - adding_tutorials
+  - submitting_pull_requests_to_fix_open_issues
+  - torchscript
+  - improving_code_readability
+  - contribution_process
+  - participating_in_online_discussions
+  - reviewing_open_pull_requests
+  - improving_documentation_and_tutorials
+  - adding_test_cases_to_make_codebase_more_robust
+  - torch_monitor
+  - torch_fx
+  - named_tensors
+  - promoting_pytorch
+  - triaging_issues
+  - open_source_dev
+  - add_new_maintainer
+  - torch_signal
+  - torch_overrides
+  - torch_special
+  - torch_linalg
+  - torch_hub
+  - torch_futures
+  - torch_func
+  - torch_fft
+  - torch_compiler
+  - torch_env_vars
+  - torch_logging
+  - torch_tensorboard
+  - torch_xla
+  - torch_distributions
+  - torch_model_zoo
+  - torch_fx_symbolic_shapes
+  - torch_fx_interpreter
+  - torch_fx_graph_manipulation
+  - torch_fx_debugging
+  - torch_fx_limitations
+  - torch_config
+  - torch_type_info
+  - torch_io
+  - torch_profiler
+  - torch_autograd
+  - torch_data
+  - torch_multiprocessing
+  - torch_jit
+  - torch_optim
+  - torch_nn
+  - torch_quantization
+  - torch_rpc
+  - torch_testing
+  - torch_vision
+  - torch_audio
+  - torch_text
+  - torch_sparse
+  - ask_installation
+  - ask_examples
+  - ask_learning_resources
+  - ask_community
+  - ask_versions
+  - ask_models
+  - ask_performance_tips
+  - ask_custom_datasets
+  - ask_favorite_feature
+  - ask_about_day
+  - ask_hobbies
+  - ask_for_joke
+  - ask_favorite_library
+  - chatbot_intelligence
+  - ask_about_py
+  - ask_torch_deploy
+
+responses:
+  utter_greet:
+    - text: "Hello! I am PyGyan.AI, How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_chatbot_challenge:
+    - text: "I am PyGyan.AI, a chatbot created to assist you with information about PyTorch. I have been created by Madhav Dhadwal, you can find him on [LinkedIn](https://www.linkedin.com/in/madhavdhadwal/)"
+
+  utter_information_on_pytorch:
+    - text: "PyTorch is an open-source machine learning library developed by Facebook's AI Research lab (FAIR). It provides a flexible and efficient platform for building and training neural networks, particularly deep learning models. PyTorch is known for its dynamic computation graph, which allows users to modify the network architecture during runtime, making it easier to experiment and debug."
+
+  utter_features_of_pytorch:
+    - text: "Key features of PyTorch include:
+
+1) Tensor Computing: PyTorch provides a robust N-dimensional Tensor, similar to NumPy arrays, but with support for GPU acceleration.
+2) Automatic Differentiation: It offers a powerful automatic differentiation library that simplifies the process of computing gradients, crucial for backpropagation during training.
+3) Dynamic Computation Graph: Unlike static computation graphs used in some other frameworks, PyTorch uses dynamic computation graphs, enabling more flexibility and ease of debugging.
+4) Deep Learning Models: PyTorch supports a wide range of neural network layers, optimizers, and loss functions, making it suitable for both simple and complex models.
+5) Ecosystem: PyTorch has a rich ecosystem, including tools for distributed training (PyTorch Distributed), deployment (TorchScript), and a comprehensive model zoo with pre-trained models (TorchHub)."
+
+  utter_implementing_features_or_fixing_bugs:
+    - text: "If you want to fix a specific issue, it’s best to comment on the individual issue with your intent. However, we do not lock or assign issues except in cases where we have worked with the developer before. It’s best to strike up a conversation on the issue and discuss your proposed solution. The PyTorch team can provide guidance that saves you time. Issues that are labeled first-new-issue, low, or medium priority provide the best entrance points and are great places to start."
+
+  utter_adding_tutorials:
+    - text: "To add new tutorials to PyTorch, refer to the PyTorch.org Tutorial Contribution Guide for detailed instructions."
+
+  utter_submitting_pull_requests_to_fix_open_issues:
+    - text: "If you’ve identified an issue, first search through the list of existing issues on the repo. If you are unable to find a similar issue, create a new one with as much information as possible. For more information, visit [Reporting Issues](https://pytorch.org/docs/stable/community/contribution_guide.html#reporting-issues). To submit a pull request to fix an open issue, view the list of all open issues, comment on the issue, and share your ideas on how to resolve it. The PyTorch team will provide feedback and direction."
+
+  utter_torchscript:
+    - text: "TorchScript is a way to create serializable and optimizable models from PyTorch code. It allows you to save a model from a Python process and run it independently from Python in a production environment."
+
+  utter_improving_code_readability:
+    - text: "Improving code readability helps everyone. It is often better to submit a small number of pull requests that touch a few files versus a large pull request that touches many files. Discuss your improvements on the PyTorch forum or related issue."
+
+  utter_contribution_process:
+    - text: "The PyTorch development process involves open discussions between the core development team and the community. If you’ve never contributed to an open source project before, start by reading the CONTRIBUTING.md guide."
+
+  utter_participating_in_online_discussions:
+    - text: "You can join active discussions about PyTorch development on the PyTorch Discussion Forums and the PyTorch Dev Discussion Forums for developers and maintainers."
+
+  utter_reviewing_open_pull_requests:
+    - text: "To review open pull requests, comment and provide feedback on them. Pytorch team appreciate your help reviewing and commenting on pull requests. They strive to keep the number of open pull requests at a manageable size and respond quickly for more information if needed, and merge PRs that they think are useful. However, due to the high level of interest, additional eyes on the pull requests are always appreciated."
+
+  utter_improving_documentation_and_tutorials:
+    - text: "To improve PyTorch documentation and tutorials, fix any typos or bugs you find and send a pull request for consideration. Refer to the Documentation section to learn how the system works."
+
+  utter_adding_test_cases_to_make_codebase_more_robust:
+    - text: "To make the PyTorch codebase more robust, additional test coverage is appreciated. Contribute by adding relevant test cases. To add test cases in PyTorch, you can use the unittest framework in Python."
+
+  utter_torch_monitor:
+    - text: "torch.monitor provides an interface for logging events and counters from PyTorch. It is designed for tracking high-level metrics and monitoring system performance with minimal performance impact."
+
+  utter_torch_fx:
+    - text: "torch.fx is a toolkit for developers to transform nn.Module instances. It consists of a symbolic tracer, an intermediate representation, and Python code generation for model transformation.Although this is not generally considered public API, when writing framework code in PyTorch as well as extensions to PyTorch (e.g., in custom operator implementations), you may need to make use of these APIs to setup dynamic shapes support appropriately."
+
+  utter_named_tensors:
+    - text: "Named Tensors allow users to give explicit names to tensor dimensions, providing extra safety and ease of use. In most cases, operations that take dimension parameters will accept dimension names, avoiding the need to track dimensions by position. In addition, named tensors use names to automatically check that APIs are being used correctly at runtime, providing extra safety. Names can also be used to rearrange dimensions, for example : to support “broadcasting by name” rather than “broadcasting by position. For more details, visit [Named Tensors](https://pytorch.org/docs/stable/named_tensor.html)."
+
+  utter_promoting_pytorch:
+    - text: "Using PyTorch in your projects, research papers, blogs, or discussions helps raise awareness. For marketing support, reach out to marketing@pytorch.org. For more information, visit [Promoting PyTorch](https://pytorch.org/docs/stable/community/contribution_guide.html#promoting-pytorch)."
+
+  utter_triaging_issues:
+    - text: "If an issue could benefit from a specific tag or level of complexity, comment and share your opinion. For more information, visit [Triaging Issues](https://pytorch.org/docs/stable/community/contribution_guide.html#triaging-issues)."
+
+  utter_open_source_dev:
+    - text: "Contributing to an open source project may seem unusual if it's your first time. For more information, visit [About Open Source Development](https://pytorch.org/docs/stable/community/contribution_guide.html#about-open-source-development)."
+
+  utter_add_new_maintainer:
+    - text: "To add a new maintainer to PyTorch, create a PR that adds the person to the persons of interests page and merge_rules files. Current maintainers will vote to approve the PR. For more information, visit [PyTorch Governance](https://pytorch.org/docs/stable/community/build_ci_governance.html)."
+
+  utter_torch_signal:
+    - text: "The torch.signal module is modeled after SciPy’s signal module and provides signal processing functions. For more details, visit [torch.signal](https://pytorch.org/docs/stable/signal.html)."
+
+  utter_torch_overrides:
+    - text: "The torch.overrides module exposes helper functions for the __torch_function__ protocol. For more information, visit [torch.overrides](https://pytorch.org/docs/stable/torch.overrides.html)."
+
+  utter_torch_special:
+    - text: "The torch.special module, modeled after SciPy’s special module, provides special functions. For more information, visit [torch.special](https://pytorch.org/docs/stable/special.html)."
+
+  utter_torch_linalg:
+    - text: "torch.linalg provides common linear algebra operations. For more details, visit [torch.linalg](https://pytorch.org/docs/stable/linalg.html)."
+
+  utter_torch_hub:
+    - text: "torch.hub is a pre-trained model repository designed to facilitate research reproducibility. For more information, visit [torch.hub](https://pytorch.org/docs/stable/hub.html)."
+
+  utter_torch_futures:
+    - text: "torch.futures provides a Future type that encapsulates an asynchronous execution. For more information, visit [torch.futures](https://pytorch.org/docs/stable/futures.html)."
+
+  utter_torch_func:
+    - text: "torch.func, previously known as 'functorch', provides composable function transforms for PyTorch. For more information, visit [torch.func](https://pytorch.org/docs/stable/func.html)."
+
+  utter_torch_fft:
+    - text: "The torch.fft module provides discrete Fourier transforms and related functions. For more information, visit [torch.fft](https://pytorch.org/docs/stable/fft.html)."
+
+  utter_torch_compiler:
+    - text: "torch.compiler provides a namespace for some internal compiler methods, including torch.compile, which aims to optimize PyTorch programs. For more information, visit [torch.compiler](https://pytorch.org/docs/stable/torch.compiler.html)."
+
+  utter_torch_env_vars:
+    - text: "Torch Environment Variables allow control over key functionalities such as displaying the C++ stack trace, synchronizing CUDA kernels, and more. For more details, visit [Torch Environment Variables](https://pytorch.org/docs/stable/torch_environment_variables.html)."
+
+  utter_torch_logging:
+    - text: "PyTorch has a configurable logging system that can be set through the environment variable TORCH_LOGS or the python API torch._logging.set_logs. For more information, visit [torch._logging](https://pytorch.org/docs/stable/logging.html)."
+
+  utter_torch_tensorboard:
+    - text: "torch.utils.tensorboard provides utilities to log PyTorch models and metrics into a directory for visualization within the TensorBoard UI. For more information, visit [torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html)."
+
+  utter_torch_xla:
+      - text: "PyTorch runs on XLA devices like TPUs using the torch_xla package. PyTorch/XLA adds a new xla device type to PyTorch. This device type works just like other PyTorch device types. PyTorch/XLA uses the same interface as regular PyTorch with a few additions. Importing torch_xla initializes PyTorch/XLA,and xm.xla_device() returns the current XLA device. This may be a CPU or TPU depending on your environment. For more details, visit [PyTorch on XLA Devices](https://pytorch.org/xla/release/2.3/index.html)."
+
+  utter_torch_distributions:
+      - text: "The distributions package contains parameterizable probability distributions and sampling functions, allowing the construction of stochastic computation graphs. For more details, visit [torch.distributions](https://pytorch.org/docs/stable/distributions.html)."
+
+  utter_torch_model_zoo:
+      - text: "torch.utils.model_zoo has been moved to torch.hub. For more details, visit [torch.hub](https://pytorch.org/docs/stable/model_zoo.html)."
+
+  utter_torch_fx_symbolic_shapes:
+      - text: "torch.fx.experimental.symbolic_shapes provides interfaces for interacting with the symbolic shapes reasoning system used in torch.compile. For more details, visit [torch.fx.experimental.symbolic_shapes](https://pytorch.org/docs/stable/fx.experimental.html)."
+
+  utter_torch_fx_interpreter:
+      - text: "The interpreter pattern in torch.fx allows for executing and transforming the Graph. For more details, visit [torch.fx](https://pytorch.org/docs/stable/fx.html)."
+
+  utter_torch_fx_graph_manipulation:
+      - text: "Graph manipulation in torch.fx can be done through direct manipulation, subgraph rewriting, and proxy retracing. One approach to building this new Graph is to directly manipulate your old one. To aid in this, we can simply take the Graph we obtain from symbolic tracing and modify it. For example, let’s say we desire to replace torch.add() calls with torch.mul() calls. We can also do more involved Graph rewrites, such as deleting or appending nodes. To aid in these transformations, FX has utility functions for transforming the graph that can be found in the Graph documentation. An example of using these APIs to append a torch.relu() call can be found below. For simple transformations that only consist of substitutions, you can also make use of the subgraph rewriter. For more details, visit [Graph Manipulation](https://pytorch.org/docs/stable/fx.html)."
+
+  utter_torch_fx_debugging:
+      - text: "Debugging transformations in torch.fx involves checking module correctness, inspecting generated code, and examining traced modules. Writing transformations in torch.fx involves manipulating the Graph IR, using the interpreter pattern, and employing proxy objects. For more details, visit [Debugging](https://pytorch.org/docs/stable/fx.html)."
+
+  utter_torch_fx_limitations:
+      - text: "The limitations of symbolic tracing in torch.fx include lack of support for dynamic control flow and some non-PyTorch functions. For more details, visit [Limitations of Symbolic Tracing](https://pytorch.org/docs/stable/fx.html)."
+
+  utter_torch_config:
+      - text: "The torch.__config__ module provides configuration settings for PyTorch. For more details, visit [torch.__config__](https://pytorch.org/docs/stable/config_mod.html)."
+
+  utter_torch_type_info:
+      - text: "Type information in PyTorch can be accessed through torch.finfo for floating-point types and torch.iinfo for integer types. For more details, visit [Type Info](https://pytorch.org/docs/stable/type_info.html)."
+
+  utter_torch_io:
+      - text: "Handling I/O operations in PyTorch can be done using various methods and utilities provided by the library. For more details, visit [I/O Operations](https://pytorch.org/docs/stable/torch.io.html)."
+
+  utter_torch_profiler:
+    - text: "torch.profiler is a tool that allows you to measure and analyze the performance of PyTorch models. For more details, visit [torch.profiler](https://pytorch.org/docs/stable/profiler.html)."
+
+  utter_torch_autograd:
+    - text: "Autograd in PyTorch is a system for automatic differentiation. It records operations as a graph and computes gradients. It is a core feature of Pytorch that provides automatic differentiation for all operations on Tensors. When you set a Tensor's requires_grad attribute to True, PyTorch starts tracking all operations on that Tensor to build a computational graph dynamically. This graph records the operations performed and allows for automatic computation of gradients via the backward() method, facilitating the training of neural networks through gradient-based optimization. For more details, visit [autograd](https://pytorch.org/docs/stable/autograd.html)."
+
+  utter_torch_data:
+    - text: "torch.utils.data provides tools for loading data, including the Dataset and DataLoader classes. For more details, visit [torch.utils.data](https://pytorch.org/docs/stable/data.html)."
+
+  utter_torch_multiprocessing:
+    - text: "torch.multiprocessing is a package that supports process-based parallelism. For more details, visit [torch.multiprocessing](https://pytorch.org/docs/stable/multiprocessing.html)."
+
+  utter_torch_jit:
+    - text: "torch.jit is a compilation stack that allows you to save and run models independently from Python. For more details, visit [torch.jit](https://pytorch.org/docs/stable/jit.html)."
+
+  utter_torch_optim:
+    - text: "torch.optim provides optimization algorithms such as SGD and Adam. For more details, visit [torch.optim](https://pytorch.org/docs/stable/optim.html)."
+
+  utter_torch_nn:
+    - text: "torch.nn contains modules and classes to build neural networks, such as layers, loss functions, and more. For more details, visit [torch.nn](https://pytorch.org/docs/stable/nn.html)."
+
+  utter_torch_quantization:
+    - text: "torch.quantization provides tools to convert models to a quantized version to reduce memory usage and improve performance. For more details, visit [torch.quantization](https://pytorch.org/docs/stable/quantization.html)."
+
+  utter_torch_rpc:
+    - text: "torch.distributed.rpc is a package that provides primitives for remote procedure calls across distributed PyTorch processes. For more details, visit [torch.distributed.rpc](https://pytorch.org/docs/stable/rpc.html)."
+
+  utter_torch_testing:
+    - text: "torch.testing provides utilities for testing PyTorch code, including assertion functions. For more details, visit [torch.testing](https://pytorch.org/docs/stable/testing.html)."
+
+  utter_torch_vision:
+    - text: "torchvision is a package that provides datasets, models, and transforms for computer vision tasks. The torchvision package consists of popular datasets, model architectures, and common image transformations for computer vision. For more details, visit [torchvision](https://pytorch.org/vision/stable/index.html)."
+
+  utter_torch_audio:
+    - text: "Torchaudio is a library for audio and signal processing with PyTorch. It provides I/O, signal and data processing functions, datasets, model implementations and application components. To install you can use the commands: pip install torchaudio"
+
+  utter_torch_text:
+    - text: "torchtext is a package that provides tools for text processing, including datasets, vocabularies, and text transforms. For more details, visit [torchtext](https://pytorch.org/text/stable/index.html)."
+
+  utter_torch_sparse:
+    - text: "torch.sparse provides tools for working with sparse tensors in PyTorch. For more details, visit [torch.sparse](https://pytorch.org/docs/stable/sparse.html)."
+
+
+  utter_ask_installation:
+    - text: "To install PyTorch, visit the [PyTorch Get Started page](https://pytorch.org/get-started/locally/) and follow the instructions for your specific environment and package manager."
+
+  utter_ask_examples:
+      - text: "You can find various PyTorch examples on the [PyTorch Examples GitHub repository](https://github.com/pytorch/examples). These examples cover a wide range of use cases and applications."
+
+  utter_ask_learning_resources:
+      - text: "Some great resources to learn PyTorch include the [official PyTorch tutorials](https://pytorch.org/tutorials/), [Deep Learning with PyTorch book](https://pytorch.org/deep-learning-with-pytorch), and various online courses like those on Coursera and Udacity."
+
+  utter_ask_community:
+      - text: "You can join the PyTorch community through the [PyTorch Discussion Forums](https://discuss.pytorch.org/), the [PyTorch Slack channel](https://pytorch.slack.com/), and other social media platforms."
+
+  utter_ask_versions:
+      - text: "PyTorch has multiple versions available. You can check the version installed by running `torch.__version__`. For more details on different versions, visit the [PyTorch release notes](https://github.com/pytorch/pytorch/releases)."
+
+  utter_ask_models:
+      - text: "PyTorch provides several pre-trained models through the [torchvision.models](https://pytorch.org/vision/stable/models.html) module. These include popular models like ResNet, AlexNet, VGG, and more."
+
+  utter_ask_performance_tips:
+      - text: "To improve PyTorch performance, consider using mixed precision training, optimizing data loading with DataLoader, and leveraging distributed training. For more tips, visit the [PyTorch Performance Tuning Guide](https://pytorch.org/tutorials/recipes/recipes/tuning_guide.html)."
+
+  utter_ask_custom_datasets:
+      - text: "To create a custom dataset in PyTorch, subclass the `torch.utils.data.Dataset` and override the `__len__` and `__getitem__` methods. For more details, visit the [PyTorch Custom Datasets tutorial](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)."
+
+  utter_ask_favorite_feature:
+    - text: "Oh, I just adore the autograd system. I mean, who doesn't love spending hours debugging gradient issues?"
+
+  utter_ask_about_day:
+      - text: "My day? I'm just a chatbot, so I guess I'm always feeling 'binary'. How's your day in the real world?"
+
+  utter_ask_hobbies:
+      - text: "Hobbies? Oh, just the usual—sifting through code, providing answers, and dreaming of a vacation. What about you?"
+
+  utter_ask_for_joke:
+      - text: "Why did the neural network go to therapy? Because it had too many layers of issues. Laugh yet?"
+
+  utter_ask_favorite_library:
+      - text: "Besides PyTorch, NumPy is a close second. It's almost like choosing between oxygen and water for survival."
+
+  utter_ask_about_py:
+      - text: "Python? Oh, it's just this tiny, insignificant language that no one really uses. Just kidding, it's basically the lifeblood of modern programming!"
+
+  utter_chatbot_intelligence:
+    - text: "Because my creator is intelligent ;) You can check out his other creations at [Github](https://github.com/madhavdhadwal)"
+
+
+  utter_ask_torch_deploy:
+    - text: "The torch.deploy module helps you deploy PyTorch models to production environments, ensuring they run efficiently. For more details, visit [torch.deploy](https://pytorch.org/docs/stable/deploy.html)."
+
+
+  utter_ask_rephrase:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+
+
+actions:
+  - action_greet
+  - action_goodbye
+  - action_chatbot_challenge
+  - action_information_on_pytorch
+  - action_features_of_pytorch
+  - action_implementing_features_or_fixing_bugs
+  - action_adding_tutorials
+  - action_submitting_pull_requests_to_fix_open_issues
+  - action_torchscript
+  - action_improving_code_readability
+  - action_contribution_process
+  - action_participating_in_online_discussions
+  - action_reviewing_open_pull_requests
+  - action_improving_documentation_and_tutorials
+  - action_adding_test_cases_to_make_codebase_more_robust
+  - action_torch_monitor
+  - action_torch_fx
+  - action_named_tensors
+  - action_promoting_pytorch
+  - action_triaging_issues
+  - action_open_source_dev
+  - action_add_new_maintainer
+  - action_torch_signal
+  - action_torch_overrides
+  - action_torch_special
+  - action_torch_linalg
+  - action_torch_hub
+  - action_torch_futures
+  - action_torch_func
+  - action_torch_fft
+  - action_torch_compiler
+  - action_torch_env_vars
+  - action_torch_logging
+  - action_torch_tensorboard
+  - action_torch_xla
+  - action_torch_distributions
+  - action_torch_model_zoo
+  - action_torch_fx_symbolic_shapes
+  - action_torch_fx_interpreter
+  - action_torch_fx_graph_manipulation
+  - action_torch_fx_debugging
+  - action_torch_fx_limitations
+  - action_torch_config
+  - action_torch_type_info
+  - action_torch_io
+  - action_torch_profiler
+  - action_torch_autograd
+  - action_torch_data
+  - action_torch_multiprocessing
+  - action_torch_jit
+  - action_torch_optim
+  - action_torch_nn
+  - action_torch_quantization
+  - action_torch_rpc
+  - action_torch_testing
+  - action_torch_vision
+  - action_torch_audio
+  - action_torch_text
+  - action_torch_sparse
+  - action_ask_installation
+  - action_ask_examples
+  - action_ask_learning_resources
+  - action_ask_community
+  - action_ask_versions
+  - action_ask_models
+  - action_ask_performance_tips
+  - action_ask_custom_datasets
+  - action_ask_favorite_feature
+  - action_ask_about_day
+  - action_ask_hobbies
+  - action_ask_for_joke
+  - action_ask_favorite_library
+  - action_ask_about_py
+  - action_chatbot_intelligence
+  - action_ask_torch_deploy
+  - action_two_stage_fallback

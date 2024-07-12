@@ -1,0 +1,385 @@
+
+version: "3.1"
+stories:
+- story: User greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: User says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: User challenges the chatbot
+  steps:
+  - intent: chatbot_challenge
+  - action: utter_chatbot_challenge
+
+- story: User asks about the information about Pytorch
+  steps:
+  - intent: information_on_pytorch
+  - action: utter_information_on_pytorch
+
+- story: User asks key features of Pytorch
+  steps:
+    - intent: features_of_pytorch
+    - action: utter_features_of_pytorch
+
+- story: User asks about implementing features or fixing bugs
+  steps:
+  - intent: implementing_features_or_fixing_bugs
+  - action: utter_implementing_features_or_fixing_bugs
+
+- story: User asks about adding tutorials
+  steps:
+  - intent: adding_tutorials
+  - action: utter_adding_tutorials
+
+- story: User asks about submitting pull requests to fix open issues
+  steps:
+  - intent: submitting_pull_requests_to_fix_open_issues
+  - action: utter_submitting_pull_requests_to_fix_open_issues
+
+- story: User asks about TorchScript
+  steps:
+  - intent: torchscript
+  - action: utter_torchscript
+
+- story: User asks about improving code readability
+  steps:
+  - intent: improving_code_readability
+  - action: utter_improving_code_readability
+
+- story: User asks about the contribution process
+  steps:
+  - intent: contribution_process
+  - action: utter_contribution_process
+
+- story: User asks about participating in online discussions
+  steps:
+  - intent: participating_in_online_discussions
+  - action: utter_participating_in_online_discussions
+
+- story: User asks about reviewing open pull requests
+  steps:
+  - intent: reviewing_open_pull_requests
+  - action: utter_reviewing_open_pull_requests
+
+- story: User asks about improving documentation and tutorials
+  steps:
+  - intent: improving_documentation_and_tutorials
+  - action: utter_improving_documentation_and_tutorials
+
+- story: User asks about adding test cases to make the codebase more robust
+  steps:
+  - intent: adding_test_cases_to_make_codebase_more_robust
+  - action: utter_adding_test_cases_to_make_codebase_more_robust
+
+- story: User asks about torch.monitor
+  steps:
+  - intent: torch_monitor
+  - action: utter_torch_monitor
+
+- story: User asks about torch.fx
+  steps:
+  - intent: torch_fx
+  - action: utter_torch_fx
+
+- story: User asks about named tensors
+  steps:
+  - intent: named_tensors
+  - action: utter_named_tensors
+
+- story: User asks about promoting PyTorch
+  steps:
+  - intent: promoting_pytorch
+  - action: utter_promoting_pytorch
+
+- story: User asks about triaging issues
+  steps:
+  - intent: triaging_issues
+  - action: utter_triaging_issues
+
+- story: User asks about open source development
+  steps:
+  - intent: open_source_dev
+  - action: utter_open_source_dev
+
+- story: User asks about adding a new maintainer
+  steps:
+  - intent: add_new_maintainer
+  - action: utter_add_new_maintainer
+
+- story: User asks about torch.signal
+  steps:
+  - intent: torch_signal
+  - action: utter_torch_signal
+
+- story: User asks about torch.overrides
+  steps:
+  - intent: torch_overrides
+  - action: utter_torch_overrides
+
+- story: User asks about torch.special
+  steps:
+  - intent: torch_special
+  - action: utter_torch_special
+
+- story: User asks about torch.linalg
+  steps:
+  - intent: torch_linalg
+  - action: utter_torch_linalg
+
+- story: User asks about torch.hub
+  steps:
+  - intent: torch_hub
+  - action: utter_torch_hub
+
+- story: User asks about torch.futures
+  steps:
+  - intent: torch_futures
+  - action: utter_torch_futures
+
+- story: User asks about torch.func
+  steps:
+  - intent: torch_func
+  - action: utter_torch_func
+
+- story: User asks about torch.fft
+  steps:
+  - intent: torch_fft
+  - action: utter_torch_fft
+
+- story: User asks about torch.compiler
+  steps:
+  - intent: torch_compiler
+  - action: utter_torch_compiler
+
+- story: User asks about Torch Environment Variables
+  steps:
+  - intent: torch_env_vars
+  - action: utter_torch_env_vars
+
+- story: User asks about torch._logging
+  steps:
+  - intent: torch_logging
+  - action: utter_torch_logging
+
+- story: User asks about TensorBoard
+  steps:
+  - intent: torch_tensorboard
+  - action: utter_torch_tensorboard
+
+- story: User asks about XLA devices
+  steps:
+  - intent: torch_xla
+  - action: utter_torch_xla
+
+- story: User asks about probability distributions
+  steps:
+  - intent: torch_distributions
+  - action: utter_torch_distributions
+
+- story: User asks about model zoo
+  steps:
+  - intent: torch_model_zoo
+  - action: utter_torch_model_zoo
+
+- story: User asks about symbolic shapes in torch.fx
+  steps:
+  - intent: torch_fx_symbolic_shapes
+  - action: utter_torch_fx_symbolic_shapes
+
+- story: User asks about the interpreter pattern in torch.fx
+  steps:
+  - intent: torch_fx_interpreter
+  - action: utter_torch_fx_interpreter
+
+- story: User asks about graph manipulation in torch.fx
+  steps:
+  - intent: torch_fx_graph_manipulation
+  - action: utter_torch_fx_graph_manipulation
+
+- story: User asks about debugging in torch.fx
+  steps:
+  - intent: torch_fx_debugging
+  - action: utter_torch_fx_debugging
+
+- story: User asks about limitations of torch.fx
+  steps:
+  - intent: torch_fx_limitations
+  - action: utter_torch_fx_limitations
+
+- story: User asks about torch.__config__
+  steps:
+  - intent: torch_config
+  - action: utter_torch_config
+
+- story: User asks about type information in PyTorch
+  steps:
+  - intent: torch_type_info
+  - action: utter_torch_type_info
+
+- story: User asks about I/O operations in PyTorch
+  steps:
+  - intent: torch_io
+  - action: utter_torch_io
+
+- story: User asks about torch.profiler
+  steps:
+  - intent: torch_profiler
+  - action: utter_torch_profiler
+
+- story: User asks about autograd
+  steps:
+  - intent: torch_autograd
+  - action: utter_torch_autograd
+
+- story: User asks about torch.utils.data
+  steps:
+  - intent: torch_data
+  - action: utter_torch_data
+
+- story: User asks about torch.multiprocessing
+  steps:
+  - intent: torch_multiprocessing
+  - action: utter_torch_multiprocessing
+
+- story: User asks about torch.jit
+  steps:
+  - intent: torch_jit
+  - action: utter_torch_jit
+
+- story: User asks about torch.optim
+  steps:
+  - intent: torch_optim
+  - action: utter_torch_optim
+
+- story: User asks about torch.nn
+  steps:
+  - intent: torch_nn
+  - action: utter_torch_nn
+
+- story: User asks about torch.quantization
+  steps:
+  - intent: torch_quantization
+  - action: utter_torch_quantization
+
+- story: User asks about torch.distributed.rpc
+  steps:
+  - intent: torch_rpc
+  - action: utter_torch_rpc
+
+- story: User asks about torch.testing
+  steps:
+  - intent: torch_testing
+  - action: utter_torch_testing
+
+- story: User asks about torchvision
+  steps:
+  - intent: torch_vision
+  - action: utter_torch_vision
+
+- story: User asks about torchaudio
+  steps:
+  - intent: torch_audio
+  - action: utter_torch_audio
+
+- story: User asks about torchtext
+  steps:
+  - intent: torch_text
+  - action: utter_torch_text
+
+- story: User asks about torch.sparse
+  steps:
+  - intent: torch_sparse
+  - action: utter_torch_sparse
+
+- story: User asks about installation
+  steps:
+  - intent: ask_installation
+  - action: utter_ask_installation
+
+- story: User asks for examples
+  steps:
+  - intent: ask_examples
+  - action: utter_ask_examples
+
+- story: User asks about learning resources
+  steps:
+  - intent: ask_learning_resources
+  - action: utter_ask_learning_resources
+
+- story: User asks about the community
+  steps:
+  - intent: ask_community
+  - action: utter_ask_community
+
+- story: User asks about versions
+  steps:
+  - intent: ask_versions
+  - action: utter_ask_versions
+
+- story: User asks about pre-trained models
+  steps:
+  - intent: ask_models
+  - action: utter_ask_models
+
+- story: User asks about performance tips
+  steps:
+  - intent: ask_performance_tips
+  - action: utter_ask_performance_tips
+
+- story: User asks about custom datasets
+  steps:
+  - intent: ask_custom_datasets
+  - action: utter_ask_custom_datasets
+
+- story: User asks about favorite PyTorch feature
+  steps:
+  - intent: ask_favorite_feature
+  - action: utter_ask_favorite_feature
+
+- story: User asks about the chatbot's day
+  steps:
+  - intent: ask_about_day
+  - action: utter_ask_about_day
+
+- story: User asks about hobbies
+  steps:
+  - intent: ask_hobbies
+  - action: utter_ask_hobbies
+
+- story: User asks for a joke
+  steps:
+  - intent: ask_for_joke
+  - action: utter_ask_for_joke
+
+- story: User asks about favorite Python library
+  steps:
+  - intent: ask_favorite_library
+  - action: utter_ask_favorite_library
+
+- story: User asks about Python
+  steps:
+  - intent: ask_about_py
+  - action: utter_ask_about_py
+
+- story: User asks about Intelligence of bot
+  steps:
+  - intent: chatbot_intelligence
+  - action: utter_chatbot_intelligence
+
+- story: User asks about torch_deploy
+  steps:
+  - intent: ask_torch_deploy
+  - action: utter_ask_torch_deploy
+
+
+
+#- story: Handle unknown user inputs
+#  steps:
+#  - intent: default_fallback
+#  - action: utter_default_fallback
+
